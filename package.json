@@ -1,0 +1,23 @@
+{
+  "name": "quality-is-key",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iler22/Quality-is-key.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iler22/Quality-is-key/issues"
+  },
+  "homepage": "https://github.com/Iler22/Quality-is-key#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
