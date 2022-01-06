@@ -1,13 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const isRequired = (answer) => {
-  if (answer === '') {
-    return 'This is a required field';
-  }
-  return true;
-};
-
+const isRequired = (input) => 
+ input === '' ? 'This is a required field' : true;
+  
 const isUrl = (input) => {
   try {
     const url = new URL(input);
@@ -19,14 +15,14 @@ const isUrl = (input) => {
   }
 };
 
-const isEmail = (input) => {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input)) {
-    return true;
-  }
-  return 'Please enter valid email';
-};
+const isEmail = (input) =>
+  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input)
+    ? true
+    : 'Please enter valid email';
+   
 
-const questions = [
+const start = async () => {
+  const questions = [
   {
     type: 'input',
     message: 'What is the title of your project?',
@@ -93,33 +89,9 @@ const questions = [
     validate: isEmail,
   },
 ];
-
-const inquirerAsync = async (questions) => {
-  try {
-    const answers = await inquirer.prompt(questions);
-
-    return answers;
-  } catch (error) {
-    console.log(`Error: ${error.message}`);
-    process.exit(0);
-  }
-};
-
-// const writeToFile = (path, data, options) => {
-//   try {
-//     fs.writeFileSync(path, data, options);
-//     console.log(`Successfully created quality README ${path}!`);
-//   } catch (error) {
-//     console.log(`Failed to create read me ${path}: ${error.message}!`);
-//   }
-// };
-
-const start = async () => {
-  const answers = await inquirerAsync(questions);
+  const answers = await inquirer.prompt(questions);
 
   console.log(answers);
-
-  // writeToFile('output.json', JSON.stringify(answers));
 };
 
 start();
