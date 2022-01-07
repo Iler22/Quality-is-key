@@ -72,7 +72,7 @@ const start = async () => {
 
   writeToFile(README);
 
-  console.log('Successfully created a quality README!');
+  console.log('Successfully created a quality README in output folder!');
 };
 
 start();
