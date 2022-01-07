@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/89151536/148613251-21ca568a-a897-42fc-
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
+* [Test](#test)
 * [Questions](#questions)
 
 ## Installation
