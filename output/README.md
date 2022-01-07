@@ -1,27 +1,24 @@
 # Quality Is Key
-  
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
-  ## Description
-  
-  The purpose of this application is to show how a README can be created using the terminal command-line.
-  
-  ## Table of Contents
-  
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+
+## Description
+
+The purpose of this application is to show how a README can be created using the terminal command-line.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#test)
+- [Questions](#questions)
 
 ## Installation
 
-## Installation
 To install dependencies, run the following:
-`
-npm init -y and npm install inquirer
-`
+`npm init -y and npm install inquirer`
 
 ## Usage
 
@@ -38,9 +35,7 @@ This application is a demonstartion.
 ## Test
 
 To run tests, run the following:
-`
-npm run start
-`
+`npm run start`
 
 ## Questions
 
