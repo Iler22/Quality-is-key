@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { generateREADME } = require('./generate');
 const { isRequired, isUrl, isEmail } = require('./validate');
+const { writeToFile } = require('./file');
 
 const start = async () => {
   const questions = [
@@ -32,13 +34,7 @@ const start = async () => {
       type: 'checkbox',
       message: 'What license does your project fall under?',
       name: 'license',
-      choices: [
-        'Apache 2.0',
-        'Boost Software 1.0',
-        'ISC',
-        'MIT',
-        'The Unlicense',
-      ],
+      choices: ['Apache 2.0', 'Boost Software 1.0', 'ISC', 'MIT'],
     },
     {
       type: 'input',
@@ -72,7 +68,11 @@ const start = async () => {
   ];
   const answers = await inquirer.prompt(questions);
 
-  console.log(answers);
+  const README = generateREADME(answers);
+
+  writeToFile(README);
+
+  console.log('Successfully created a quality README!');
 };
 
 start();
