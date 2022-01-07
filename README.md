@@ -8,6 +8,12 @@ This project is a command line application that automatically generates a profes
 
 ## Demonstration
 
+Please see below demonstration of how to generate a README using the command line:
+
+https://user-images.githubusercontent.com/89151536/148613251-21ca568a-a897-42fc-88a3-2853b06e0900.mp4
+
+## Screenshot
+
 
 
 ## Table of Contents
