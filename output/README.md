@@ -12,7 +12,7 @@ The purpose of this application is to show how a README can be created using the
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#test)
+- [Test](#test)
 - [Questions](#questions)
 
 ## Installation
